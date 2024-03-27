@@ -10,7 +10,7 @@ bs4
 Pillow==8.3.2
 pymediainfo
 opencv-python-headless 
-pytgcalls==3.0.0.dev24
+pytgcalls==3.0.0.dev22
 requests
 unidecode
 pytimeparse
