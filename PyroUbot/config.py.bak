@@ -32,5 +32,5 @@ OPENAI_KEY = os.getenv(
 
 MONGO_URL = os.getenv(
     "MONGO_URL",
-    "mongodb+srv://rey:rey@cluster0.l5serex.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0",
+    "",
 )
