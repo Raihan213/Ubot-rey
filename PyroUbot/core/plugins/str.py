@@ -53,7 +53,7 @@ async def ping_cmd(client, message):
         _ping = f"""
 <b>❏ Pong:</b> <code>{str(delta_ping).replace('.', ',')} ms</code>
 <b>├ Date: <code>{uptime}</code></b>
-<b>╰ reybubot:</b> <a href=tg://user?id={client.me.id}>{client.me.first_name} {client.me.last_name or ''}</a>
+<b>╰ Talent:</b> <a href=tg://user?id={client.me.id}>{client.me.first_name} {client.me.last_name or ''}</a>
 """
     await eor(message, _ping)
 
