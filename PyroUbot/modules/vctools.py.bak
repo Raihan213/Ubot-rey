@@ -9,10 +9,10 @@ __HELP__ = """
 • Perintah: <code>{0}stopvc</code>
 • Penjelasan: Untuk mengakhiri voice chat grup.
 
-• Perintah: <code>{0}naikos</code>
+• Perintah: <code>{0}joinvc</code>
 • Penjelasan: Untuk bergabunf voice chat grup.
 
-• Perintah: <code>{0}turunos</code>
+• Perintah: <code>{0}leavevc</code>
 • Penjelasan: Untuk meninggalkan voice chat grup.
 """
 
@@ -51,40 +51,40 @@ async def get_group_call(
     await eor(message, f"**No group call Found** {err_msg}")
     return False
 
-@PY.UBOT("naikos", sudo=True)
-async def naikos(client, message):
+@PY.UBOT("joinvc", sudo=True)
+async def joinvc(client, message):
     chat_id = message.command[1] if len(message.command) > 1 else message.chat.id
     with suppress(ValueError):
         chat_id = int(chat_id)
     naek = await client.group_call.start(chat_id)
     if naek:
-        await message.reply("Akun Lu Nyangkut Ngentod !!")
+        await message.reply("Akun anda sudah berada diatas !!")
     else:
         try:
             await client.group_call.start(chat_id)
         except Exception as e:
             return await message.reply(f"ERROR: {e}")
         await message.reply(
-            "**❏ Berhasil Crot Dalem**\n**╰ Chat** : {}".format(message.chat.title)
+            "**❏ Berhasil Join Voice**\n**╰ Chat** : {}".format(message.chat.title)
         )
         await sleep(1)
         await client.group_call.set_is_mute(True)
 
 
-@PY.UBOT("turunos", sudo=True)
-async def turunos(client, message):
+@PY.UBOT("leavevc", sudo=True)
+async def leavevc(client, message):
     chat_id = message.command[1] if len(message.command) > 1 else message.chat.id
     with suppress(ValueError):
         chat_id = int(chat_id)
     turun = await client.group_call.stop()
     if turun:
-        await message.reply("Lu Ga Lagi Diatas Ngentod.")
+        await message.reply("Anda sedang tidak berada di dalam obrolan suara manapun.")
     else:
         try:
             await client.group_call.stop()
         except Exception as e:
             return await message.reply(f"ERROR: {e}")
-        msg = "**❏ Berhasil Turun Dari Gc sampah!!**\n"
+        msg = "**❏ Berhasil Meninggalkan Voice Chat**\n"
         if chat_id:
             msg += f"**╰ Chat**: {message.chat.title}"
         await message.reply(msg)
