@@ -37,7 +37,7 @@ Harga Perbulan: {harga}.000
 
 💳 Metode Pembayaran:
  ├──• DANA
- ├─• 082231511518
+ ├─• 088223786532
 
 
 🔖 Total Harga: Rp {total}.000
@@ -67,7 +67,7 @@ termasuk akses ke fitur pembuatan userbot, maka Anda tidak lagi memenuhi syarat 
 Dukungan:
 
 Untuk mendapatkan bantuan atau dukungan, 
-Anda dapat menghubungi admin di bawah ini atau mengirim pesan ke @swandisini di Telegram. 
+Anda dapat menghubungi admin di bawah ini atau mengirim pesan ke @heisnotrey di Telegram. 
 Harap diingat, jangan menghubungi Dukungan Telegram atau 
 Dukungan Bot untuk masalah terkait pembayaran yang dilakukan di bot ini.
 

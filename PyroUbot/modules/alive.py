@@ -115,7 +115,7 @@ async def _(client, inline_query):
             ping = (datetime.now() - start).microseconds / 1000
             uptime = await get_time((time() - start_time))
             msg = f"""
-<b>Swan Ubot Os</b>
+<b>Rey Ubot Os</b>
      <b>status:</b> [{status}]
         <b>device_model:</b> <code>Sweet</code>
         <b>magisk_hide:</b> <code>{antipm}</code>
