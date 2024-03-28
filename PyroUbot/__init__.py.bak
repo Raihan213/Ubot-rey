@@ -34,7 +34,7 @@ logger.addHandler(connection_handler)
 
 class Bot(Client):
     def __init__(self, **kwargs):
-        super().__init__(**kwargs, device_model="reyprem-bot")
+        super().__init__(**kwargs, device_model="swanprem-bot")
 
     def on_message(self, filters=None, group=-1):
         def decorator(func):
@@ -63,7 +63,7 @@ class Ubot(Client):
     _get_my_peer = {} 
 
     def __init__(self, **kwargs):
-        super().__init__(**kwargs, device_model="rey-ubot")
+        super().__init__(**kwargs, device_model="swan-ubot")
         self.group_call = GroupCallFactory(self).get_group_call()
         self.device_model = "rey-bot"
 

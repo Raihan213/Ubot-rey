@@ -20,8 +20,8 @@ from PyroUbot import *
 
 
 async def create_botlog(client):
-    name = "Rey-Ubot Logs"
-    desc = "Jangan Keluar Dari Grup Log Ini\n\nPowered by: @dystopikos"
+    name = "Swan-Ubot Logs"
+    desc = "Jangan Keluar Dari Grup Log Ini\n\nPowered by: @swandisini"
     group = await client.create_supergroup(name, desc)
     nt = wget.download("https://telegra.ph//file/cde5561fabae31ac09698.jpg")
     photo_video = {"video": nt} if nt.endswith(".mp4") else {"photo": nt}
@@ -33,7 +33,7 @@ async def create_botlog(client):
     )
     
 async def get_log(client):
-    name = "Rey-Ubot Logs"
+    name = "Swan-Ubot Logs"
     async for dialog in client.get_dialogs():
         if dialog.chat.title == name:
             return dialog.chat
