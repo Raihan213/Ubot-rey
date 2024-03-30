@@ -27,7 +27,7 @@ PREFIX = COMMAND.split()
 
 OPENAI_KEY = os.getenv(
     "OPENAI_KEY",
-    "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",
+    "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",
 ).split()
 
 MONGO_URL = os.getenv(
