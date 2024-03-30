@@ -20,14 +20,14 @@ BLACKLIST_CHAT = list(map(int, os.getenv("BLACKLIST_CHAT", "-1002047274922 -1002
 
 MAX_BOT = int(os.getenv("MAX_BOT", "50"))
 
-RMBG_API = os.getenv("RMBG_API", "abcdefg")
+RMBG_API = os.getenv("RMBG_API", "WEnHwQnst3E2HzjGgwmy4UpB")
 
 COMMAND = os.getenv("COMMAND", ".")
 PREFIX = COMMAND.split()
 
 OPENAI_KEY = os.getenv(
     "OPENAI_KEY",
-    "reyganteng",
+    "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",
 ).split()
 
 MONGO_URL = os.getenv(

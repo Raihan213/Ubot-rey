@@ -27,10 +27,10 @@ PREFIX = COMMAND.split()
 
 OPENAI_KEY = os.getenv(
     "OPENAI_KEY",
-    "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",
+    "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",
 ).split()
 
 MONGO_URL = os.getenv(
     "MONGO_URL",
-    "mongodb+srv://rey:rey@cluster0.l5serex.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0",
+    "mongodb+srv://reybot:reybot@cluster0.hwt9afk.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0",
 )
