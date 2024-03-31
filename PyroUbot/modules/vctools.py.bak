@@ -58,14 +58,14 @@ async def naikos(client, message):
         chat_id = int(chat_id)
     naek = await client.group_call.start(chat_id)
     if naek:
-        await message.reply("Akun Anda Sudah Di Atas !!")
+        await message.reply("Akun Lu Nyangkut Ngentod !!")
     else:
         try:
             await client.group_call.start(chat_id)
         except Exception as e:
             return await message.reply(f"ERROR: {e}")
         await message.reply(
-            "**❏ Berhasil menaruh bot**\n**╰ Chat** : {}".format(message.chat.title)
+            "**❏ Berhasil Crot Dalem**\n**╰ Chat** : {}".format(message.chat.title)
         )
         await sleep(1)
         await client.group_call.set_is_mute(True)
@@ -78,13 +78,13 @@ async def turunos(client, message):
         chat_id = int(chat_id)
     turun = await client.group_call.stop()
     if turun:
-        await message.reply("Akun Anda Sedang Tidak Diatas.")
+        await message.reply("Lu Ga Lagi Diatas Ngentod.")
     else:
         try:
             await client.group_call.stop()
         except Exception as e:
             return await message.reply(f"ERROR: {e}")
-        msg = "**❏ Berhasil Turun Dari Os!!**\n"
+        msg = "**❏ Berhasil Turun Dari Gc sampah!!**\n"
         if chat_id:
             msg += f"**╰ Chat**: {message.chat.title}"
         await message.reply(msg)
