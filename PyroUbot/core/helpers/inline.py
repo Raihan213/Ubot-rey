@@ -61,7 +61,7 @@ class Button:
             button = [
                 [InlineKeyboardButton("🔥 ʙᴜᴀᴛ ᴜsᴇʀʙᴏᴛ 🔥", callback_data="bahan")],
                 [
-                    InlineKeyboardButton(text="👤 ᴏᴡɴᴇʀ ʙᴏᴛ", url="https://t.me/heisnotrey"),
+                    InlineKeyboardButton(text="👤 ᴏᴡɴᴇʀ ʙᴏᴛ", url="https://t.me/Itsnotdad"),
                     InlineKeyboardButton("sᴛᴀᴛᴜs ᴀᴋᴜɴ 👥", callback_data="pler"),
                 ],
                 [InlineKeyboardButton("📁 ᴍᴏᴅᴜʟ 📁", callback_data="help_back")],
