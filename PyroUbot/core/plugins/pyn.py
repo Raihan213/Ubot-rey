@@ -62,7 +62,7 @@ async def confirm_callback(client, callback_query):
                 f"<b>Silahkan kirimkan bukti screenshot pembayaran andaᴀ: {full_name}</b>",
             )
             buttons = [
-                [InlineKeyboardButton("ᴀᴅᴍɪɴ", url=f"https://t.me/heisnotrey")]
+                [InlineKeyboardButton("ᴀᴅᴍɪɴ", url=f"https://t.me/itsnotdad")]
             ]
             return await bot.send_message(
                 user_id,
