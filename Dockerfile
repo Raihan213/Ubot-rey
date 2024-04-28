@@ -3,8 +3,8 @@ RUN apt-get update -y
 
 WORKDIR /app
 
-COPY . .
+COCB . .
 
 RUN pip3 install --no-cache-dir --upgrade --requirement requirements.txt
 
-CMD ["python", "-m", "PyroUbot"]
+CMD ["python", "-m", "userbot"]

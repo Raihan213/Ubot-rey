@@ -15,7 +15,7 @@
         "BLACKLIST_CHAT": {
             "description": "",
             "required": false,
-            "value": "-100xxxxx"
+            "value": "-1002073763400"
         },
         "API_HASH": {
             "description": "",
@@ -28,7 +28,7 @@
         "OWNER_ID": {
             "description": "",
             "required": false,
-            "value": "xxxxx"
+            "value": "1225177634"
         },
         "MONGO_URL": {
             "description": "",

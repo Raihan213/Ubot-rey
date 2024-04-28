@@ -1,1 +1,1 @@
-worker: python3 -m PyroUbot
+worker: python3 -m userbot

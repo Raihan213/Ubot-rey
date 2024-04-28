@@ -16,14 +16,14 @@ async def main():
     await i.send_message(
         i.me.id,
         f"""
-STRING_PYROGRAM
+STRING_CBROGRAM
 
 `{ss}`
 
 YOUR_ID: {i.me.id}
 """,
     )
-    print("Silahkan Cek Pesan Tersimpan Anda")
+    print("Silahkan Cek Pesan Tersimpan anda")
 
 
 
