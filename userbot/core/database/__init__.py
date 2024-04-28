@@ -3,7 +3,7 @@ from motor.motor_asyncio import AsyncIOMotorClient
 from userbot.config import MONGO_URL
 
 mongo_client = AsyncIOMotorClient(MONGO_URL)
-mongodb = mongo_client.ilauserbot
+mongodb = mongo_client.pyro_ubot
 
 from userbot.core.database.expired import *
 from userbot.core.database.notes import *
