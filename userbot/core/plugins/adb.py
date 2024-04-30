@@ -148,7 +148,7 @@ async def bikin_ubot(client, callback_query):
         name=str(callback_query.id),
         api_id=API_ID,
         api_hash=API_HASH,
-        in_memory=False,
+        in_memory=True,
     )
     get_otp = await bot.send_message(user_id, "<b>mengirim kode otp...</b>")
     await new_client.connect()
@@ -246,6 +246,7 @@ async def bikin_ubot(client, callback_query):
         api_id=API_ID,
         api_hash=API_HASH,
         session_string=session_string,
+        in_memory=True,
     )
     if callback_query.from_user.id not in await get_seles():
         await remove_prem(callback_query.from_user.id) 

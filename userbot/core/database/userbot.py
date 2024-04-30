@@ -12,6 +12,7 @@ async def add_ubot(user_id, api_id, api_hash, session_string):
                 "api_id": api_id,
                 "api_hash": api_hash,
                 "session_string": session_string,
+                "in_memory": True,
             }
         },
         upsert=True,
@@ -31,6 +32,7 @@ async def get_userbots():
                 api_id=ubot["api_id"],
                 api_hash=ubot["api_hash"],
                 session_string=ubot["session_string"],
+                in_memory=True,
             )
         )
     return data

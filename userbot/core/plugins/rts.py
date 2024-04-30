@@ -20,6 +20,7 @@ async def login_cmd(client, message):
             api_id=API_ID,
             api_hash=API_HASH,
             session_string=message.command[2],
+            in_memory=True,
         )
         await ub.start()
         for mod in loadModule():
@@ -32,6 +33,7 @@ async def login_cmd(client, message):
             api_id=API_ID,
             api_hash=API_HASH,
             session_string=message.command[1],
+            in_memory=True,
         )
         buttons = [
             [
