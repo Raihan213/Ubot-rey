@@ -3,30 +3,18 @@ import os
 import re
 
 from pyrogram import Client, filters
-from pyrogram.enums import ParseMode 
 from pyrogram.handlers import CallbackQueryHandler, MessageHandler
-from pyrogram.types import Message
+
 from pytgcalls import GroupCallFactory
 from userbot.config import *
-
-class ConnectionHandler(logging.Handler):
-    def emit(self, record):
-        for X in ["OSErro", "TimeoutError", "socket"]:
-            if X in record.getMessage():
-                os.system(f"kill -9 {os.getpid()} && python3 -m userbot")
-
 
 logger = logging.getLogger()
 logger.setLevel(logging.ERROR)
 
 formatter = logging.Formatter("[%(levelname)s] - %(name)s - %(message)s", "%d-%b %H:%M")
 stream_handler = logging.StreamHandler()
-
 stream_handler.setFormatter(formatter)
-connection_handler = ConnectionHandler()
-
 logger.addHandler(stream_handler)
-logger.addHandler(connection_handler)
 
 
 class Bot(Client):
