@@ -19,7 +19,9 @@ async def start_ubot(user_id, _ubot):
             await remove_chat(user_id, X)
         await sending_user(user_id)
         print(f"[𝗜𝗡𝗙𝗢] - ({user_id}) 𝗧𝗜𝗗𝗔𝗞 𝗗𝗔𝗣𝗔𝗧 𝗠𝗘𝗥𝗘𝗦𝗣𝗢𝗡")
-    except:
+    except FloodWait as e:
+        await asyncio.sleep(e.x)  # tunggu durasi yang diberikan oleh Telegram
+    except Exception as e:
         await remove_ubot(user_id)
         await rm_all(user_id)
         await remove_all_vars(user_id)
