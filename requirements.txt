@@ -1,3 +1,10 @@
+pyroferk==2.0
+tgcrypto-pyrofork>=1.2.6
+pyrofork
+pyaes
+pymediainfo
+pymongo
+pysocks
 aiofiles==23.2.1
 aiohttp==3.9.3
 aiosignal==1.3.1
@@ -35,10 +42,8 @@ Pillow==10.3.0
 psutil==5.9.8
 pyaes==1.6.1
 pycryptodomex==3.20.0
-pykeyboard==0.1.5
 pymediainfo==6.1.0
 pymongo==4.6.3
-pyrogeram==1.0
 pySmartDL==1.3.4
 PySocks==1.7.1
 python-dateutil==2.9.0.post0
@@ -60,4 +65,4 @@ wget==3.2
 yarl==1.9.4
 youtube-search-python==1.6.6
 yt-dlp==2024.3.10
-pytgcalls==3.0.0.dev22
+geramcals==1.1
