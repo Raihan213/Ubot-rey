@@ -1,10 +1,10 @@
 pyroferk==2.0
 tgcrypto-pyrofork>=1.2.6
-pyrofork
 pyaes
 pymediainfo
 pymongo
 pysocks
+uvloop
 aiofiles==23.2.1
 aiohttp==3.9.3
 aiosignal==1.3.1

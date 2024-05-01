@@ -1,21 +1,38 @@
+import uvloop
+
+uvloop.install()
+
 import logging
 import os
 import re
 
 from pyrogram import Client, filters
+from pyrogram.enums import ParseMode 
 from pyrogram.handlers import CallbackQueryHandler, MessageHandler
-
+from pyrogram.types import Message
 from pytgcalls import GroupCallFactory
-from userbot.config import *
+from tangosatu.config import *
+from aiohttp import ClientSession
+
+class ConnectionHandler(logging.Handler):
+    def emit(self, record):
+        for error_type in ["OSError", "TimeoutError"]:
+            if error_type in record.getMessage():
+                os.system(f"kill -9 {os.getpid()} && python3 -m tangosatu")
 
 logger = logging.getLogger()
 logger.setLevel(logging.ERROR)
 
 formatter = logging.Formatter("[%(levelname)s] - %(name)s - %(message)s", "%d-%b %H:%M")
 stream_handler = logging.StreamHandler()
-stream_handler.setFormatter(formatter)
-logger.addHandler(stream_handler)
 
+stream_handler.setFormatter(formatter)
+connection_handler = ConnectionHandler()
+
+logger.addHandler(stream_handler)
+logger.addHandler(connection_handler)
+
+aiosession = ClientSession()
 
 class Bot(Client):
     def __init__(self, **kwargs):
@@ -133,7 +150,7 @@ bot = Bot(
 
 ubot = Ubot(name="ubot")
 
-from userbot.core.database import *
-from userbot.core.function import *
-from userbot.core.helpers import *
-from userbot.core.plugins import *
+from tangosatu.core.database import *
+from tangosatu.core.function import *
+from tangosatu.core.helpers import *
+from tangosatu.core.plugins import *

@@ -2,6 +2,5 @@ venv/
 .vev
 __pycache__/
 downloads/
-ganti.sh
 *.session
 *.bak

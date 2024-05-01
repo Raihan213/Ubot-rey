@@ -1,7 +1,7 @@
 import os
 
 DEVS = [
-    1831850761,
+    400626816,
 ]
 
 API_ID = int(os.getenv("API_ID", "28610365"))
@@ -10,9 +10,9 @@ API_HASH = os.getenv("API_HASH", "8219cdcb17704a457a2423322410baa4")
 
 BOT_TOKEN = os.getenv("BOT_TOKEN", "6863127605:AAGLsnL0cTl2JjobqWQ9NZGj-fV-Ia-52UQ")
 
-OWNER_ID = int(os.getenv("OWNER_ID", "1831850761"))
+OWNER_ID = int(os.getenv("OWNER_ID", "400626816"))
 
-USER_ID = list(map(int,os.getenv("USER_ID", "400626816 6067783576",).split(),))
+USER_ID = list(map(int,os.getenv("USER_ID", "400626816 400626816",).split(),))
 
 LOGS_MAKER_UBOT = int(os.getenv("LOGS_MAKER_UBOT", "-1002082932015"))
 
