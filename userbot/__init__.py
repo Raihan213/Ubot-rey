@@ -11,14 +11,14 @@ from pyrogram.enums import ParseMode
 from pyrogram.handlers import CallbackQueryHandler, MessageHandler
 from pyrogram.types import Message
 from pytgcalls import GroupCallFactory
-from tangosatu.config import *
+from userbot.config import *
 from aiohttp import ClientSession
 
 class ConnectionHandler(logging.Handler):
     def emit(self, record):
         for error_type in ["OSError", "TimeoutError"]:
             if error_type in record.getMessage():
-                os.system(f"kill -9 {os.getpid()} && python3 -m tangosatu")
+                os.system(f"kill -9 {os.getpid()} && python3 -m userbot")
 
 logger = logging.getLogger()
 logger.setLevel(logging.ERROR)
@@ -150,7 +150,7 @@ bot = Bot(
 
 ubot = Ubot(name="ubot")
 
-from tangosatu.core.database import *
-from tangosatu.core.function import *
-from tangosatu.core.helpers import *
-from tangosatu.core.plugins import *
+from userbot.core.database import *
+from userbot.core.function import *
+from userbot.core.helpers import *
+from userbot.core.plugins import *

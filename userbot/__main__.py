@@ -2,14 +2,14 @@ import asyncio
 
 from pyrogram import idle
 import os
-from tangosatu import *
+from userbot import *
 from pyrogram import Client
 from atexit import register
 
 async def auto_restart():
     while not await asyncio.sleep(3600):
         def _():
-            os.system(f"kill -9 {os.getpid()} && python3 -m tangosatu")
+            os.system(f"kill -9 {os.getpid()} && python3 -m userbot")
         register(_)
         sys.exit(0)
 
@@ -42,7 +42,7 @@ async def start_ubot(user_id, _ubot):
 async def main():
     tasks = [
         asyncio.create_task(start_ubot(int(_ubot["name"]), _ubot))
-        for _ubot in await get_tangosatus()
+        for _ubot in await get_userbots()
     ]
     await asyncio.gather(*tasks, bot.start())
     await asyncio.gather(loadPlugins(), expiredUserbots(), auto_restart(), idle())
