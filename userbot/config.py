@@ -1,7 +1,7 @@
 import os
 
 DEVS = [
-    28382341
+    28382341,
 ]
 
 API_ID = int(os.getenv("API_ID", "28382341"))
@@ -14,9 +14,9 @@ OWNER_ID = int(os.getenv("OWNER_ID", "28382341"))
 
 USER_ID = list(map(int,os.getenv("USER_ID", "28382341 28382341",).split(),))
 
-LOGS_MAKER_UBOT = int(os.getenv("LOGS_MAKER_UBOT", "-1002082932015"))
+LOGS_MAKER_UBOT = int(os.getenv("LOGS_MAKER_UBOT", "-4673039767"))
 
-BLACKLIST_CHAT = list(map(int, os.getenv("BLACKLIST_CHAT", "-1002082932015 -1002082932015").split()))
+BLACKLIST_CHAT = list(map(int, os.getenv("BLACKLIST_CHAT", "-4673039767 -4673039767").split()))
 
 MAX_BOT = int(os.getenv("MAX_BOT", "50"))
 
